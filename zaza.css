@@ -25,10 +25,10 @@ body {
     margin: 0;
     height: 100vh;
     background-color: black;
-    display: flex;
+    font-family: monospace;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
+    display: flex;
 }
 
 .container h1 {
@@ -38,6 +38,8 @@ body {
     border-right: 3px solid #00ffcc;
     padding-right: 8px;
     animation: blink 0.8s infinite;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes blink {
@@ -102,3 +104,71 @@ body {
         transform: scale(10);
     }
 };
+
+.gift-page {
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.gift-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    max-width: 900px;
+    width: 100%;
+    align-items: start;
+}
+
+.text-box {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#giftTyping {
+    display: block;
+    width: 100%;
+    color: #00ffcc;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+#giftTyping::after {
+    content: "|";
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+}
+
+#flower {
+    width: 260px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.5 ease;
+}
+
+#flower.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes flowerIn {
+    from {
+        opacity: 0;
+        transform: scale(0.7) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0)
+    }
+}
