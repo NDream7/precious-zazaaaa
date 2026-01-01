@@ -91,7 +91,7 @@ body {
 }
 
 .zoom-in {
-    animation: zoomToGift 1.5s forwards;
+    animation: zoomToGift 2s forwards;
 }
 
 @keyframes zoomToGift {
@@ -99,19 +99,6 @@ body {
         transform: scale(1);
     }
     to {
-        transform: scale(5);
+        transform: scale(10);
     }
-}
-
-.open {
-    animation: giftOpen 0.6 forwards;
-}
-
-@keyframes giftOpen {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.3) rotate(10deg);
-    }
-}
+};

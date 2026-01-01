@@ -1,7 +1,7 @@
 const texts = [
     "✨Zazaaaa...✨",
     "🎂hari iniiii kaann kamu ulang tahuunnn🎂",
-    "😆jadiiii, aku buatin program ini buat kamuuu😆",
+    "😆jadiiii, aku buatin program ini buat kamuuu eheheh😆",
     "💖semogaaa, kamu suka yaaaa💖",
     "🌟Barakallahu fi umriki Siti Nazwa Jawariah🌟"
 ];
@@ -12,7 +12,7 @@ const intro = document.getElementById("intro");
 const startBtn = document.getElementById("startBtn");
 const typing = document.getElementById("typing");
 const button = document.getElementById("nextBtn");
-const giftBox = document.getByElementId("gift-box");
+const giftBox = document.getElementById("gift-box");
 const container = document.querySelector(".container");
 
 const typingSound = document.getElementById("typingSound");
