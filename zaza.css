@@ -26,9 +26,9 @@ body {
     height: 100vh;
     background-color: black;
     font-family: monospace;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container h1 {
@@ -108,25 +108,20 @@ body {
 .gift-page {
     background: black;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: monospace;
 }
 
 .gift-wrapper {
     display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 60px;
-    max-width: 900px;
-    width: 100%;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    padding: 40px;
     align-items: start;
 }
 
 .text-box {
-    width: 100%;
+    max-width: 700px;
     text-align: left;
-    padding-left: 20px;
 }
 
 #giftTyping {
@@ -147,10 +142,13 @@ body {
 }
 
 #flower {
-    width: 260px;
+    width: 320px;
+    position: sticky;
+    top: 40px;
     opacity: 0;
-    transform: translateY(20px);
+    transform: scale(0.9);
     transition: all 1.5 ease;
+    
 }
 
 #flower.show {

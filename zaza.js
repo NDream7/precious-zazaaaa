@@ -1,5 +1,6 @@
 const texts = [
-    "✨Zazaaaa...✨",
+    "✨Haaaiii Zazaaaa...✨",
+    "😁aku harap kamu baca ini sampe terakhir yaakk eheh😁",
     "🎂hari iniiii kaann kamu ulang tahuunnn🎂",
     "😆jadiiii, aku buatin program ini buat kamuuu eheheh😆",
     "💖semogaaa, kamu suka yaaaa💖",
