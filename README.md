@@ -1,2 +1,2 @@
 # precious-zazaaaa
-everything about special for zaza
+everything something special for Zazaaaa
