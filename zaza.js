@@ -69,6 +69,9 @@ button.onclick = () => {
     giftBox.classList.add("open");
     container.classList.add("zoom-in");
 
+    const musicTime = Math.floor(bgMusic.currentTime * 100) / 100;
+    console.log('Sending music time:', musicTime);
+
     setTimeout(() => {
         window.location.href = "zaza-gift.html";
     }, 1500);

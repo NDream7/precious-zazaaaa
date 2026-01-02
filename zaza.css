@@ -127,13 +127,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px 40px;
-    gap: 20px;
+    padding: 30px 30px;
+    gap: 10px;
 }
 
 .text-box {
     flex: 1;
-    max-width: 65%;
+    max-width: 90%;
 }
 
 #giftTyping {
@@ -152,11 +152,12 @@ body {
 }
 
 #flower {
-    width: 320px;
+    width: 350px;
     height: auto;
     position: sticky;
     top: 56px;
     opacity: 0;
+    transform: translateX(150%);
     transition: all 1.5 ease;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
@@ -164,6 +165,22 @@ body {
 
 #flower.show {
     opacity: 1;
+    transform: translateX(0);
+    animation: slideInFromRight 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150%) scale(0.8);
+    }
+    60% {
+        transform: translateX(-10px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
 }
 
 @keyframes blink {
