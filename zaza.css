@@ -109,30 +109,40 @@ body {
     background: black;
     min-height: 100vh;
     font-family: monospace;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#giftBody {
+    display: block !important;
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .gift-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 40px;
-    padding: 40px;
-    align-items: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 40px;
+    gap: 20px;
 }
 
 .text-box {
-    max-width: 700px;
-    text-align: left;
+    flex: 1;
+    max-width: 65%;
 }
 
 #giftTyping {
-    display: block;
-    width: 100%;
     color: #00ffcc;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
     text-align: left;
     white-space: pre-wrap;
-    position: relative;
+    display: block;
 }
 
 #giftTyping::after {
@@ -143,17 +153,17 @@ body {
 
 #flower {
     width: 320px;
+    height: auto;
     position: sticky;
-    top: 40px;
+    top: 56px;
     opacity: 0;
-    transform: scale(0.9);
     transition: all 1.5 ease;
-    
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
 }
 
 #flower.show {
     opacity: 1;
-    transform: translateY(0);
 }
 
 @keyframes blink {
