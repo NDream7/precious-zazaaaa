@@ -6,17 +6,26 @@
         <link rel="stylesheet" href="zaza.css">
     </head>
     <body class="gift-page" id="giftBody">
-        <div class="gift-wrapper">
-            <div class="text-box">
-                <div id="giftTyping"></div>
+        <div class="blur-overlay"></div>
+        <div class="gift-content">
+            <div class="gift-wrapper">
+                <div class="text-box">
+                    <div id="giftTyping"></div>
+                </div>
+                <div class="image-box" id="imageBox">
+                    <img src="img/zaza.jpg" id="zazaPhoto" alt="Zaza" style="display:none;">
+                    <div id="photoCaption" style="display:none;">
+                        Happy Birthday Zazaaaa 🎂✨<br>
+                        (btw, this is the only one picture of you that I have)
+                    </div>
+                    
+                    <img src="img/hyacinth.jpg" id="flower" alt="White Hyacinth" style="display:none;">
+                    <div id="quote" style="display:none;">
+                        "White Hyacinth, Beautiful"
+                    </div>       
+                </div>    
             </div>
-            <img
-                src="img/hyacinth.jpg"
-                id="flower"
-                alt="White Hyacinth">
-
-        </div>
-
+        </div>    
         <audio id="typingSound" src="audio/typing.mp3" preload="auto"></audio>
         <audio id="bgMusic" src="audio/backsound.mp3" loop></audio>
         <script src="zaza-gift.js"></script>
