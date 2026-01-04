@@ -5,10 +5,12 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, -apple-system, system-ui, sans-serif;
     overflow-x: hidden;
     background: linear-gradient(135deg, #FFB6D9 0%, #FFC9E3 25%, #FFE5F1 50%, #FFC9E3 75%, #FFB6D9 100%);
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #intro {
