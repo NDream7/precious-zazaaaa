@@ -14,20 +14,21 @@ const zazaPhoto = document.getElementById("zazaPhoto");
 const photoCaption = document.getElementById("photoCaption");
 const flower = document.getElementById("flower");
 const quote = document.getElementById("quote");
+const giftNextBtn = document.getElementById("giftNextBtn");
 const typingSound = document.getElementById("typingSound");
 const bgMusic = document.getElementById("bgMusic");
 
 let pIndex = 0;
 let charIndex = 0;
 let photoShown = false;
+let isTypingComplete = false;
 
 const urlParams = new URLSearchParams(window.location.search);
 const musicTime = urlParams.get('t');
 
 console.log('Music time from URL:', musicTime);
 
-bgMusic.volume = 0.3;
-
+bgMusic.volume = 0.7;
 bgMusic.preload = 'auto';
 bgMusic.load();
 
@@ -95,26 +96,32 @@ function typeParagraph() {
         );
     } else {
         if (pIndex === 0) {
-            setTimeout(() => {
-                zazaPhoto.style.opacity = "0";
-                photoCaption.style.opacity = "0";
-                typing.style.opacity = "0";
-
-                setTimeout(() => {
-
-                    typing.textContent = "";
-                    typing.style.opacity = "1";
-                    zazaPhoto.style.display = "none";
-                    photoCaption.style.display = "none";
-                
-                    pIndex = 1;
-                    charIndex = 0;
-                    typeParagraph();
-                }, 1000);
-            }, 5000);    
+            isTypingComplete = true;
+            giftNextBtn.style.display = "block";
         }
-            
-    }
+    }    
 }
 
+giftNextBtn.onclick = () => {
+    if (isTypingComplete && pIndex === 0) {
+        giftNextBtn.style.display = "none";
+
+        zazaPhoto.style.opacity = "0";
+        photoCaption.style.opacity = "0";
+        typing.style.opacity = "0";
+
+        setTimeout(() => {
+            typing.textContent = "";
+            typing.style.opacity = "1";
+            zazaPhoto.style.display = "none";
+            photoCaption.style.display = "none";
+
+            pIndex = 1;
+            charIndex = 0;
+            isTypingComplete = false;
+            typeParagraph();
+        }, 1000);
+    }
+};
+     
 typeParagraph();

@@ -23,7 +23,7 @@ startBtn.onclick = () => {
     intro.style.display = "none";
     container.style.display = "flex";
 
-    bgMusic.volume = 0.5;
+    bgMusic.volume = 0.7;
     bgMusic.play();
 
     textIndex = 0;
