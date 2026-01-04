@@ -400,8 +400,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    body, .gift-page {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    /* Override font untuk SEMUA elemen di mobile */
+    *, body, .gift-page, #intro, .container, .focus-frame, .gift-content {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
     }
 
     #intro h1 {
@@ -409,13 +410,12 @@ body {
         font-weight: 900;
         padding: 0 20px;
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     }
 
     #startBtn {
         padding: 12px 30px;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 900;
     }
 
     .focus-frame {
@@ -430,7 +430,6 @@ body {
         min-height: 60px;
         white-space: normal;
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     }
 
     #gift-box {
@@ -440,7 +439,7 @@ body {
     #nextBtn, #giftNextBtn {
         padding: 12px 30px;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 900;
     }
 
     .gift-content {
@@ -457,7 +456,10 @@ body {
         font-size: 1.3rem;
         font-weight: 900;
         line-height: 1.8;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    }
+
+    #giftTyping::after {
+        font-weight: 900;
     }
 
     .image-box {
@@ -473,19 +475,18 @@ body {
         font-size: 1.05rem;
         font-weight: 900;
         padding: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     }
 }
 
 @media (max-width: 480px) {
-    body, .gift-page {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    /* Override font untuk SEMUA elemen di small mobile */
+    *, body, .gift-page, #intro, .container, .focus-frame, .gift-content {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
     }
 
     #intro h1 {
         font-size: 1.6rem;
         font-weight: 900;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     }
 
     .focus-frame {
@@ -495,11 +496,14 @@ body {
     .container h1 {
         font-size: 1.4rem;
         font-weight: 900;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     }
 
     #gift-box {
         font-size: 70px;
+    }
+
+    #startBtn {
+        font-weight: 900;
     }
 
     .gift-content {
@@ -509,7 +513,10 @@ body {
     #giftTyping {
         font-size: 1.15rem;
         font-weight: 900;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    }
+
+    #giftTyping::after {
+        font-weight: 900;
     }
 
     #zazaPhoto {
@@ -519,7 +526,10 @@ body {
     #photoCaption, #quote {
         font-size: 0.95rem;
         font-weight: 900;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    }
+
+    #nextBtn, #giftNextBtn {
+        font-weight: 900;
     }
 }
 
