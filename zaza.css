@@ -400,9 +400,10 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Override font untuk SEMUA elemen di mobile */
+    /* Override font untuk SEMUA elemen di mobile - pakai Roboto Bold */
     *, body, .gift-page, #intro, .container, .focus-frame, .gift-content {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+        font-family: 'Roboto', 'Noto Sans', 'Arial Black', 'Arial', sans-serif !important;
+        -webkit-text-stroke: 0.3px currentColor;
     }
 
     #intro h1 {
@@ -410,6 +411,7 @@ body {
         font-weight: 900;
         padding: 0 20px;
         text-align: center;
+        -webkit-text-stroke: 0.5px #ffffff;
     }
 
     #startBtn {
@@ -430,6 +432,7 @@ body {
         min-height: 60px;
         white-space: normal;
         text-align: center;
+        -webkit-text-stroke: 0.4px #FF1493;
     }
 
     #gift-box {
@@ -453,9 +456,11 @@ body {
     }
 
     #giftTyping {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         font-weight: 900;
         line-height: 1.8;
+        -webkit-text-stroke: 0.4px #FF1493;
+        text-shadow: 0 0 1px #FF1493;
     }
 
     #giftTyping::after {
@@ -472,21 +477,24 @@ body {
     }
 
     #photoCaption, #quote {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         font-weight: 900;
         padding: 15px;
+        -webkit-text-stroke: 0.3px #FF1493;
     }
 }
 
 @media (max-width: 480px) {
     /* Override font untuk SEMUA elemen di small mobile */
     *, body, .gift-page, #intro, .container, .focus-frame, .gift-content {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif !important;
+        font-family: 'Roboto', 'Noto Sans', 'Arial Black', 'Arial', sans-serif !important;
+        -webkit-text-stroke: 0.3px currentColor;
     }
 
     #intro h1 {
         font-size: 1.6rem;
         font-weight: 900;
+        -webkit-text-stroke: 0.5px #ffffff;
     }
 
     .focus-frame {
@@ -496,6 +504,7 @@ body {
     .container h1 {
         font-size: 1.4rem;
         font-weight: 900;
+        -webkit-text-stroke: 0.4px #FF1493;
     }
 
     #gift-box {
@@ -511,8 +520,10 @@ body {
     }
 
     #giftTyping {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         font-weight: 900;
+        -webkit-text-stroke: 0.4px #FF1493;
+        text-shadow: 0 0 1px #FF1493;
     }
 
     #giftTyping::after {
@@ -524,8 +535,9 @@ body {
     }
 
     #photoCaption, #quote {
-        font-size: 0.95rem;
+        font-size: 1rem;
         font-weight: 900;
+        -webkit-text-stroke: 0.3px #FF1493;
     }
 
     #nextBtn, #giftNextBtn {
