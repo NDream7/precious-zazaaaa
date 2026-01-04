@@ -5,12 +5,13 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, -apple-system, system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     overflow-x: hidden;
     background: linear-gradient(135deg, #FFB6D9 0%, #FFC9E3 25%, #FFE5F1 50%, #FFC9E3 75%, #FFB6D9 100%);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
 }
 
 #intro {
@@ -95,17 +96,18 @@ body {
 
 .container h1 {
     color: #FF1493;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
-    min-height: 100px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-right: 3px solid #FF1493;
     animation: blink 0.8s infinite;
     white-space: nowrap;
     padding-right: 8px;
+    font-weight: 700;
 }
 
 @keyframes blink {
@@ -117,7 +119,8 @@ body {
     text-align: center;
     cursor: pointer;
     animation: giftFloat 2s infinite;
-    transition: transform 0.3s;
+    transition: trahnsform 0.3s;
+    margin: 20px 0;
 }
 
 #gift-box:hover {
@@ -171,7 +174,7 @@ body {
 .gift-page {
     background: linear-gradient(135deg, #FFB6D9 0%, #FFC9E3 25%, #FFE5F1 50%, #FFC9E3 75%, #FFB6D9 100%);
     min-height: 100vh;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     display: block;
     margin: 0;
     padding: 0;
@@ -220,12 +223,16 @@ body {
     white-space: pre-wrap;
     display: block;
     transition: opacity 1s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 #giftTyping::after {
     content: "|";
     margin-left: 2px;
     animation: blink 0.7s infinite;
+    font-family: monospace;
+    font-weight: 700;
 }
 
 #giftNextBtn {
@@ -303,6 +310,7 @@ body {
     transition: opacity 1s ease;
     box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
     text-align: center;
+    line-height: 1.6;
 }
 
 #photoCaption.show {
@@ -360,6 +368,7 @@ body {
     font-style: italic;
     color: #FF1493;
     font-size: 1.1rem;
+    font-weight: 700;
     opacity: 0;
     transition: all 1s ease;
     box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
@@ -404,6 +413,7 @@ body {
 @media (max-width: 768px) {
     #intro h1 {
         font-size: 2rem;
+        font-weight: 700;
         padding: 0 20px;
         text-align: center;
     }
@@ -411,6 +421,7 @@ body {
     #startBtn {
         padding: 12px 30px;
         font-size: 1rem;
+        font-weight: 700;
     }
 
     .focus-frame {
@@ -421,6 +432,7 @@ body {
 
     .container h1 {
         font-size: 1.6rem;
+        font-weight: 700;
         min-height: 60px;
         white-space: normal;
         text-align: center;
@@ -433,6 +445,7 @@ body {
     #nextBtn, #giftNextBtn {
         padding: 12px 30px;
         font-size: 1rem;
+        font-weight: 700;
     }
 
     .gift-content {
@@ -462,13 +475,15 @@ body {
 
     #photoCaption, #quote {
         font-size: 1rem;
+        font-weight: 700;
         padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     #intro h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
     }
 
     .focus-frame {
@@ -476,7 +491,8 @@ body {
     }
 
     .container h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        font-weight: 700;
     }
 
     #gift-box {
@@ -488,12 +504,17 @@ body {
     }
 
     #giftTyping {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         font-weight: 600;
     }
 
     #zazaPhoto {
         height: 300px;
+    }
+
+    #photoCaption, #quote {
+        font-size: 0.95rem;
+        font-weight: 700;
     }
 }
 
