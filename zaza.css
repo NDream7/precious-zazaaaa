@@ -202,7 +202,7 @@ body {
     max-width: 1400px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 30px;
-    padding: 60px;
+    padding: 30px;
     box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
     z-index: 2;
     border: 5px solid #FFB6D9;
