@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <title>🎁Special For Zazaaaa🎁</title>
-        <link rel="stylesheet" href="zaza.css">
-        <style>
-            * {
-                text-rendering: optimizeLegibility;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-        </style>
-    </head>
-    <body class="gift-page" id="giftBody">
-        <div class="blur-overlay"></div>
-        <div class="gift-content">
-            <div class="gift-wrapper">
-                <div class="text-box">
-                    <div id="giftTyping"></div>
-                    <button id="giftNextBtn">Next Message💖</button>
-                </div>
-                <div class="image-box" id="imageBox">
-                    <img src="img/zaza.jpg" id="zazaPhoto" alt="Zaza" style="display:none;">
-                    <div id="photoCaption" style="display:none;">
-                        Happy Birthday Zazaaaa 🎂✨<br>
-                        (btw, this is the only one picture of you that I have)
-                    </div>
-                    
-                    <img src="img/hyacinth.jpg" id="flower" alt="White Hyacinth" style="display:none;">
-                    <div id="quote" style="display:none;">
-                        White Hyacinth, Beautiful
-                    </div>       
-                </div>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>🎁Special For Zazaaaa🎁</title>
+    <link rel="stylesheet" href="zaza.css">
+</head>
+<body class="gift-page" id="giftBody">
+    <div class="blur-overlay"></div>
+    <div class="gift-content">
+        <div class="gift-wrapper">
+            <div class="text-box">
+                <div id="giftTyping"></div>
+                <button id="giftNextBtn">Continue Reading⭐</button>
+                <button id="lastGiftBtn" style="display: none;">🎥 Open Last Gift 🎁</button>
             </div>
-        </div>    
-        <audio id="typingSound" src="audio/typing.mp3" preload="auto"></audio>
-        <audio id="bgMusic" src="audio/backsound.mp3" loop></audio>
-        <script src="zaza-gift.js"></script>
-    </body>
+            
+            <div class="image-box" id="imageBox">
+                <img src="img/zaza.jpg" id="zazaPhoto" alt="Zaza" style="display:none;">
+                <div id="photoCaption" style="display:none;">
+                    Happy Birthday Zazaaaa 🎂✨<br>
+                    (btw, this is the only one picture of you that I have)
+                </div>
+                
+                <img src="img/hyacinth.jpg" id="flower" alt="White Hyacinth" style="display:none;">
+                <div id="quote" style="display:none;">
+                    "White Hyacinth, Beautiful"
+                </div>
+
+                <div id="videoContainer" style="display:none;">
+                    <div class="video-wrapper">
+                        <!-- GANTI VIDEO_ID dengan ID video YouTube kamu -->
+                        <!-- Contoh: https://www.youtube.com/watch?v=dQw4w9WgXcQ -->
+                        <!-- VIDEO_ID = dQw4w9WgXcQ -->
+                        <iframe 
+                            id="youtubeVideo"
+                            src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1" 
+                            title="Special Gift Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div id="videoCaption">
+                        <strong>🌟The Last Gift🌟</strong><br><br>
+                        Ini adalah video spesial yang Yama bikin buat Zazaaaa.<br>
+                        Jujur, isinya cuma yapping-an aku doang, but I hope this video boost your mood.<br>
+                        Selamat ulang tahun sekali lagi, Zazaaaa! 🎂✨
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>    
+    
+    <audio id="typingSound" src="audio/typing.mp3" preload="auto"></audio>
+    <audio id="bgMusic" src="audio/backsound.mp3" loop></audio>
+    <script src="zaza-gift.js"></script>
+</body>
 </html>
